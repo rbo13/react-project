@@ -14,8 +14,8 @@
     "type": "git",
     "url": "git@github.com:rbo13/react-project.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["reactjs", "hooks"],
+  "author": "Richard Burk Orofeo <rborofeo@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",
