@@ -1,0 +1,233 @@
+// Form Alignment
+label {
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3c3c3c;
+  margin-bottom: 8px;
+}
+
+.form__container {
+  display: block;
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+/* Style the input fields */
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.form-inline input:focus {
+  outline: none;
+}
+
+.form-inline div:nth-child(2) {
+  margin-left: 8px;
+}
+
+.form__group input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form__group input:focus{
+  outline-style: none;
+}
+
+
+.form__title {
+  color: #000000;
+  font-size: 22px;
+  line-height: 28px;
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+
+.form__header {
+  text-align: center;
+  position: relative;
+}
+
+.form__nav {
+  position: absolute;
+  margin-top: 12px;
+}
+
+.form__nav:hover {
+  cursor: pointer;
+}
+
+.form__header h3 {
+  font-size: 22px;
+  line-height: 28px;
+  color: #000000;
+  margin: 0 !important;
+}
+
+.form__header p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #808080;
+  margin: 0 !important;
+}
+
+.input__text {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3c3c3c;
+  height: 30px;
+  padding: 4px;
+  width: 100%;
+}
+
+.input__password {
+  background: #ffffff;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  height: 38px;
+  padding: 8px;
+  width: 100%;
+}
+
+.input__password:focus {
+  outline-style: none;
+  box-shadow: none;
+}
+
+.input__text:focus {
+  outline-style: none;
+  box-shadow: none;
+}
+
+.btn__container {
+  margin-top: 12px;
+}
+
+.btn__container button {
+  background-color: #008bce;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 8px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.signin {
+  height: 38px;
+  background: #0696d7;
+  border-radius: 4px;
+}
+
+.info__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info__container p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #808080;
+}
+
+.info__container a {
+  margin-left: 6px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #006eaf;
+  text-decoration: none;
+}
+
+.info__container a:hover {
+  text-decoration: underline;
+}
+
+.input__error {
+  border: 1px solid #ee4444 !important;
+}
+
+.input__message {
+  background: #dcdcdc;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.inline__group {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.inline__group div:nth-child(1) input {
+  width: 22vh;
+}
+
+.inline__group div:nth-child(2) input {
+  width: 22vh;
+}
+
+.inline__group div:nth-child(1) {
+  margin-right: 8px;
+}
+
+// .inline__group div:nth-child(2) {
+// }
+
+.inline__group input {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.form__group {
+  margin-bottom: 16px;
+}
+
+.form__group input {
+  width: 100%;
+}
+
+// Media-queries
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

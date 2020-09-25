@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: autodesk_exam
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - default
+  nodejs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    links:
+      - db
+    depends_on:
+      - db
+    container_name: autodesk-exam
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "80:4002"
+    networks:
+      - default
+    volumes:
+      - .:/dist
+
+volumes:
+  pgdata:
+
+networks:
+  default:

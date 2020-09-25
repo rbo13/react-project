@@ -1,0 +1,24 @@
+.footer {
+  margin-bottom: 24px
+}
+
+.footer__items {
+  display: block;
+}
+
+.footer__item p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #999999;
+}
+
+.footer__items a {
+  font-size: 14px;
+  line-height: 20px;
+  color: #006eaf;
+  text-decoration: none;
+}
+
+.footer__items a:hover {
+  text-decoration: underline;
+}
