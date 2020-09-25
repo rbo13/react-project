@@ -18,12 +18,18 @@ This project requires [Node.js](https://nodejs.org/) v4+, [Docker](https://www.d
 Install the dependencies and devDependencies inside docker.
 ```sh
 $ cd react-project
+$ cp -a .env.example .env
+# copy .env.example inside client/ directory
+$ cd client && cp -a .env.example .env && cd ..
 $ docker-compose up -d --build
 ```
 
 Run with `make`
 ```sh
 $ cd react-project
+$ cp -a .env.example .env
+# copy .env.example inside client/ directory
+$ cd client && cp -a .env.example .env && cd ..
 $ make run
 ```
 Browse [http://localhost](http://localhost) in your browser.
