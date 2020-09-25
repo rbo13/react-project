@@ -1,8 +1,8 @@
 # React Project
 This approach uses a monorepo project. It means that my `client` and `server` are in this repository.
 
-`client` -> ReactJS Folder
-`src`    -> NodeJS Folder
+`client/` = ReactJS Folder
+`src/`    = NodeJS Folder
 
 ### Tech Stack
   - Docker/Docker Compose
@@ -24,7 +24,7 @@ $ docker-compose up -d --build
 Run with `make`
 ```sh
 $ cd react-project
-$ make deploy
+$ make run
 ```
 Browse [http://localhost](http://localhost) in your browser.
 
