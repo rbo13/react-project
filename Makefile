@@ -1,7 +1,7 @@
 .PHONY: run cleanup
 
 run: cleanup
-	docker-compose up -d --build
+	docker-compose up -d --build --force-recreate
 
 cleanup:
 	sudo rm -rf pgdata;
